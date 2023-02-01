@@ -3,10 +3,37 @@
 @tailwind utilities;
 
 /* fonts */
+@layer fonts {
+  @font-face {
+    font-family: "Mali-Bold";
+    font-style: "cursive";
+    src: url("../public/fonts/Mali-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Mali-regular";
+    font-style: "cursive";
+    src: url("../public/fonts/Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mali-Bold";
+}
+p, a, li, span, input, textarea, button {
+  font-family: "Mali-regular";
+}
 
 /* colors */
-
+.bg-gradient-to-b-black-right-bottom {
+  background-image: linear-gradient(to bottom left, white, black);
+}
 /* textures */
 
 /* reusable styles */
+.speech{
+  background-image: url('../public/images/speech.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

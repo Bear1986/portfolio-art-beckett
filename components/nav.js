@@ -1,11 +1,8 @@
 import Link from "next/link";
-
 export default function Nav() {
   const styles = {
-    wrapper: " bg-gray-200 w-[15rem] h-[13.5rem] drop-shadow-xl",
-    nav: "flex flex-col py-12 -ml-3 -mt-9 w-[14rem] h-[12rem] bg-yellow-400 drop-shadow-2xl hover:scale-110 transition-all duration-400 p-10 border-yellow-200 border-2",
-    h1: "text-3xl font-bold p-1 pb-3 text-center m-1  hover:scale-110 hover:bg-yellow-200 drop-shadow-xl transition-all duration-300 ",
-    line: "border-b-2 border-yellow-200 w-10/18 mx-auto rounded-full",
+    nav: "absolute flex hover:m-2 transition-all w-[full]  h-[4rem] ",
+    h1: "text-3xl font-bold p-1 pb-3 ml-10 text-center hover:text-[#D94D29]  hover:scale-125  text-white transition-all duration-300 ",
   };
   const navLinks = [
     {
@@ -14,23 +11,16 @@ export default function Nav() {
     },
     {
       name: "Contact",
-      path: "/contact",
+      path: "/about",
     },
   ];
   return (
-    <div className={styles.wrapper}>
-      <nav className={styles.nav}>
-        {navLinks.map((link, index) => (
-          <Link
-            key={index}
-            href={link.path}
-            alt={link.name}
-          >
-            <h1 className={styles.h1}>{link.name}</h1>
-            <div className={styles.line} />
-          </Link>
-        ))}
-      </nav>
-    </div>
+    <nav className={styles.nav}>
+      {navLinks.map((link, index) => (
+        <Link key={index} href={link.path} alt={link.name}>
+          <h1 className={styles.h1}>{link.name}</h1>
+        </Link>
+      ))}
+    </nav>
   );
 }
