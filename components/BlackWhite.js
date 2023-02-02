@@ -21,7 +21,7 @@ const BlackWhite = ({ src, alt, delay = 200 }) => {
     <Image
       src={src}
       alt={alt}
-      width={250}
+      width={350}
         height={250}
       style={{ filter: isColor ? 'none' : 'grayscale(100%)', cursor: 'pointer' }}
       onMouseEnter={() => setIsHovered(true)}

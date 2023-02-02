@@ -2,6 +2,7 @@
 
 import About from "./About";
 import Reviews from "./Reviews";
+import Work from "./Work";
 
 export default function HomeBody() {
   const styles = {};
@@ -19,11 +20,11 @@ export default function HomeBody() {
             <div className="p-8 text-lg border-2 border-[#D94D29] drop-shadow-2xl">
               <p>
                 I'm a Frontend developer with a passion for building
-                user-friendly websites.{" "}
+                user-friendly websites Based in the UK, Swindon.{" "}
               </p>
               <br></br>
               <p>
-                Since 2020, I've been helping clients and businesses bring their digital
+                Since 2021, I've been helping clients and businesses bring their digital
                 visions to life, from custom applications to landing pages and
                 e-commerce sites.
               </p>
@@ -34,12 +35,14 @@ export default function HomeBody() {
                 website or a hand with a project, I'm here to help! Let's chat
                 and see how we can work together.
               </p>
+              
             </div>
           </div>
         </div>
       </div>
 <Reviews/>
 <About/>
+<Work/>
     </>
   );
 }
