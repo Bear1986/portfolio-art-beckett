@@ -23,14 +23,14 @@ export default function Reviews() {
               />
             </div>
             <h1 className="text-xl pl-3 text-[#D94D29]">Dr Emily Hill</h1>
-            <p className="ml-3 mb-2 md:ml-0 md:mb-0">
+            <p className="ml-3 pb-2 md:ml-0 md:mb-0">
               <strong>
                 Professor of Computer Science
                 <br />
                 founder of the joy of coding Academy{" "}
               </strong>
             </p>
-            <section className="border-2 border-[#D94D29] p-2 md:mr-0">
+            <section className="border-2 border-[#D94D29] p-8 md:mr-0">
               <p>
                 In my experience, Arthur is an extremely talented and
                 hard-working individual. He has a strong work ethic and is
@@ -51,14 +51,14 @@ export default function Reviews() {
               />
             </div>
             <h1 className="text-xl pl-3 text-[#D94D29]">Chris Snoek</h1>
-            <p className="ml-3 mb-2 md:ml-0 md:mb-0">
+            <p className="ml-3 pb-2 md:ml-0 md:mb-0">
               <strong>
                 Mentor Front end Development
                 <br />
                 Front end developer at Huddle BV{" "}
               </strong>
             </p>
-            <section className="border-2 border-[#D94D29] p-2 ">
+            <section className="border-2 border-[#D94D29] p-8 ">
               <p>
                 Arthur has a broad understanding of the current landscape of
                 front end web development. Therefore he is really quick in
@@ -78,10 +78,10 @@ export default function Reviews() {
               />
             </div>
             <h1 className="text-xl pl-3 text-[#D94D29]">Romualdo Duarte Soares dos Santos</h1>
-            <p className="ml-3 mb-2 md:ml-0 md:mb-0">
+            <p className="ml-3 pb-2 md:ml-0 md:mb-0">
               <strong>Senior Dart and Flutter developer</strong>
             </p>
-            <section className="border-2 border-[#D94D29] p-2">
+            <section className="border-2 border-[#D94D29] p-8">
               <p>
               Arthur
               is always interested in helping other people,

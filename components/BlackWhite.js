@@ -22,7 +22,7 @@ const BlackWhite = ({ src, alt, delay = 200 }) => {
       src={src}
       alt={alt}
       width={350}
-        height={250}
+        height={350}
       style={{ filter: isColor ? 'none' : 'grayscale(100%)', cursor: 'pointer' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

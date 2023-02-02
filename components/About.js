@@ -14,8 +14,8 @@ export default function About() {
       <div className="bg-black text-4xl text-center py-10  text-[#D94D29]">
         <h1>About me</h1>
       </div>
-      <div className="w-full h-[2px] bg-[#D94D29]" />
-      <div className="w-full bg-white">
+      <div className="  bg-[#D94D29]" />
+      <div className=" bg-white">
         
         <div className="hidden lg:flex lg:w-full lg:justify-center p-3">
           <BlackWhite src={Church} alt="Arthur Becketts family" delay={200} />
@@ -32,7 +32,7 @@ export default function About() {
         <h1 className="text-center text-2xl text-[#D94D29]">
         From Priest to Police officer to Programer
       </h1>
-      <section className="border-2 border-[#D94D29] p-4 m-8 ">
+      <section className="border-2 border-[#D94D29] p-8 m-8 ">
       <p>After completing my studies at University, I was called to serve in the Anglican Church in South Africa, where I worked with students from various universities and churches in Kwa-Zulu Natal. My passion for serving others led me to an Assistant Ministerial position in a church on the beautiful Island of St. Helena, a British overseas territory.</p>
       <br/>
       <p>It was on this island that I met my wife and, after a time of reflection, I made the difficult decision to leave the church when I was offered the unique opportunity to become the first-ever Family Liaison Officer with the Police service. This role allowed me to continue my mission of helping others, and I was proud to serve the community in this capacity.</p>
