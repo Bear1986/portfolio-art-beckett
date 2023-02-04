@@ -5,13 +5,12 @@ import Reviews from "./Reviews";
 import Work from "./Work";
 
 export default function HomeBody() {
-  const styles = {};
-  return (
-    <>
-
-<Reviews/>
-<About/>
-<Work/>
-    </>
-  );
+	const styles = {};
+	return (
+		<>
+			<Reviews />
+			<About />
+			<Work />
+		</>
+	);
 }
