@@ -1,33 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+
 const BlackWhite = ({ src, alt, delay = 200 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [isColor, setIsColor] = useState(false);
+	const [isHovered, setIsHovered] = useState(false);
+	const [isColor, setIsColor] = useState(false);
 
-  useEffect(() => {
-    let timeoutId;
-    if (isHovered && !isColor) {
-      timeoutId = setTimeout(() => {
-        setIsColor(true);
-      }, delay);
-    } else if (!isHovered && isColor) {
-      clearTimeout(timeoutId);
-      setIsColor(false);
-    }
-    return () => clearTimeout(timeoutId);
-  }, [isHovered, isColor, delay]);
+	useEffect(() => {
+		let timeoutId;
+		if (isHovered && !isColor) {
+			timeoutId = setTimeout(() => {
+				setIsColor(true);
+			}, delay);
+		} else if (!isHovered && isColor) {
+			clearTimeout(timeoutId);
+			setIsColor(false);
+		}
+		return () => clearTimeout(timeoutId);
+	}, [isHovered, isColor, delay]);
 
-  return (
-    <Image
-      src={src}
-      alt={alt}
-      width={350}
-        height={350}
-      style={{ filter: isColor ? 'none' : 'grayscale(100%)', cursor: 'pointer' }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    />
-  );
+	return (
+		<Image
+			src={src}
+			alt={alt}
+			width={350}
+			height={350}
+			style={{
+				filter: isColor ? "none" : "grayscale(100%)",
+				cursor: "pointer",
+			}}
+			className="mx-auto"
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
+		/>
+	);
 };
 
 export default BlackWhite;
